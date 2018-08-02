@@ -1,0 +1,431 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Tahoma";
+  background: #f0efef;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+a,
+span,
+div {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-weight: normal;
+  font-family: "Tahoma";
+  color: #000;
+  font-size: 14px;
+}
+.wrapper {
+  max-width: 1140px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.slick-dots {
+  right: 1%;
+  display: flex;
+  width: 50px;
+  flex-direction: column;
+}
+.kino-events {
+  background-color: #2a1e15;
+  padding-top: 30px;
+  padding-bottom: 70px;
+}
+.kino-events h2 {
+  font-size: 4vw;
+  font-family: "Acrom";
+  color: #ffffff;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.kino-events .slider .slide {
+  position: relative;
+}
+.kino-events .slider .slide img {
+  width: 50%;
+}
+.kino-events .slider .slide p {
+  background-color: rgba(50, 40, 30, 0.6);
+  color: white;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 4vw;
+  font-family: "Acrom";
+  color: #ffffff;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+}
+.underline {
+  width: 70px;
+  height: 2px;
+  background: #cfc23a;
+  margin: 0 auto;
+}
+.afisha-past {
+  padding-top: 50px;
+  border-top: 2px solid #c6c6c6;
+}
+.afisha {
+  padding-top: 80px;
+}
+.afisha h2 {
+  font-family: "Acrom";
+  color: #2a2515;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 35px;
+}
+.afisha .afisha-container {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 120px;
+}
+.afisha .afisha-container.past {
+  opacity: 0.4;
+}
+.afisha .afisha-container .afisha-image .afisha-image-box {
+  width: 100%;
+}
+.afisha .afisha-container .afisha-image .afisha-image-box img {
+  width: 100%;
+}
+.afisha .afisha-container .afisha-image .gallery {
+  padding-left: 30px;
+}
+.afisha .afisha-container .afisha-image .gallery h3 {
+  font-family: "Acrom";
+  color: #2a2515;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+.afisha .afisha-container .afisha-image .gallery .gallery-item {
+  float: left;
+  padding: 0;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.afisha .afisha-container .afisha-image .gallery .gallery-item img {
+  width: 100%;
+  cursor: pointer;
+}
+.afisha .afisha-container .afisha-desc .afisha-text h3 {
+  font-family: "Acrom";
+  color: #2a2515;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+.afisha .afisha-container .afisha-desc .afisha-text p {
+  font-family: "Acrom";
+  color: #2a2515;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+.afisha .afisha-container .afisha-desc .afisha-text .look_more-film {
+  font-family: "Acrom";
+  color: #e69c4f;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin-top: 10px;
+  display: inline-block;
+}
+.afisha .afisha-container .afisha-desc .afisha-text .look_more-film:hover {
+  color: #d8ce6a;
+  text-decoration: none;
+  outline: none;
+}
+.afisha .afisha-container .afisha-desc .trailer-box {
+  padding-top: 6vw;
+}
+.afisha .afisha-container .afisha-desc .trailer-box h2 {
+  font-size: 2vw;
+  font-family: "Acrom";
+  color: #2a2515;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+.afisha .afisha-container .afisha-desc .trailer-box .trailer {
+  width: 100%;
+  height: 23vw;
+}
+.share {
+  margin-top: 20px;
+  border-top: 2px solid rgba(104, 101, 101, 0.4);
+  border-bottom: 2px solid rgba(104, 101, 101, 0.4);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  /*flex-direction: row;*/
+  margin-bottom: 60px;
+}
+.share .share-desc {
+  font-size: 16px;
+  font-family: "Roboto";
+  color: #acaaaa;
+  text-transform: uppercase;
+  line-height: 1.2;
+  z-index: 20;
+  display: inline-block;
+  margin-top: 10px;
+  text-align: center;
+  flex-grow: 2;
+}
+.share .head_icons {
+  display: inline-block;
+  flex-grow: 1;
+  float: right;
+}
+.share .head_icons a {
+  display: inline-block;
+  width: 40px;
+  margin-right: 10px;
+}
+.share .head_icons a .social-icon_head {
+  background: transparent;
+  border: 2px solid #acaaaa;
+  width: 35px;
+  height: 35px;
+}
+.head_icons a:hover .social-icon_head {
+  background: transparent;
+  border-color: #cfc23a;
+  transition-duration: 0s;
+}
+.share .head_icons a .social-icon_head i {
+  color: #acaaaa;
+}
+.share .head_icons a:hover .social-icon_head i {
+  color: #cfc23a;
+  border-color: #cfc23a;
+  transition-duration: 0s;
+}
+.slick-dots li button:before {
+  color: #fff;
+}
+.slick-active #slick-slide-control00::before {
+  color: #fff;
+}
+.slick-active #slick-slide-control01:before {
+  color: #fff;
+}
+.slick-active #slick-slide-control02:before {
+  color: #fff;
+}
+.slick-active #slick-slide-control03:before {
+  color: #fff;
+}
+.slick-active #slick-slide-control04:before {
+  color: #fff;
+}
+.slick-active #slick-slide-control05:before {
+  color: #fff;
+}
+
+.modal-gallery{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 999;
+  transition: all 0.3s ease-out;
+}
+.modal-gallery.active{
+  opacity: 1;
+  visibility: visible;
+}
+.modal-gallery .modal-btn{
+  position: absolute;
+  top: 3vw;
+  right: 3vw;
+  cursor: pointer;
+}
+.modal-gallery .modal-btn img{
+  width: 30px;
+  height: 30px;
+}
+.modal-gallery .modal-btn img:hover{
+  opacity: 0.7;
+}
+.modal-gallery #img1{
+  opacity: 0;
+  visibility: hidden;
+}
+.modal-gallery #img1.active{
+  opacity: 1;
+  visibility: visible;
+}
+.modal-gallery #img2{
+  opacity: 0;
+  visibility: hidden;
+}
+.modal-gallery #img2.active{
+  opacity: 1;
+  visibility: visible;
+}
+.modal-gallery #img3{
+  opacity: 0;
+  visibility: hidden;
+}
+.modal-gallery #img3.active{
+  opacity: 1;
+  visibility: visible;
+}
+.modal-gallery #img4{
+  opacity: 0;
+  visibility: hidden;
+}
+.modal-gallery #img4.active{
+  opacity: 1;
+  visibility: visible;
+}
+.modal-gallery .modal-image{
+  max-width: 700px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease-out;
+}
+.modal-gallery .modal-image img{
+  width: 100%;
+}
+
+
+
+@media screen and (min-width: 769px) {
+  .slick-dots li button:before {
+    font-size: 15px;
+  }
+  .slick-dots {
+    top: 10vw;
+  }
+  .share {
+    flex-direction: row;
+  }
+  .afisha h2 {
+    font-size: 3.5vw;
+  }
+  .afisha-container {
+    flex-direction: row;
+  }
+  .afisha-container .afisha-image {
+    width: 35%;
+  }
+  .afisha-container .afisha-image .afisha-image-box {
+    padding-left: 60px;
+  }
+  .afisha-container .afisha-desc {
+    width: 50%;
+  }
+  .afisha-container .afisha-desc .look_more-film {
+    font-size: 20px;
+  }
+  .afisha-container .afisha-desc .afisha-text h3 {
+    font-size: 2vw;
+  }
+  .afisha-container .afisha-desc .afisha-text p {
+    font-size: 1.4vw;
+  }
+  .afisha-container .gallery h3 {
+    font-size: 2vw;
+  }
+  .kino-events p {
+    font-size: 14px;
+    width: 85%;
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .afisha h2 {
+    font-size: 5vw;
+  }
+  .afisha .afisha-container .afisha-desc .trailer-box h2{
+    font-size: 20px;
+  }
+  .afisha .afisha-container{
+    padding-bottom: 20px;
+  }
+  .head_icons{
+    display: block;
+    margin: 0 auto;
+  }
+  .slick-dots li button:before {
+    font-size: 10px;
+  }
+  .slick-dots {
+    top: 5vw;
+  }
+  .share {
+    flex-direction: column;
+  }
+  .share .head_icons a:first-child {
+    /*margin-left: 30vw;*/
+  }
+  .share .head_icons a{
+    margin-right: 0px;
+  }
+  .afisha-container {
+    flex-direction: column;
+  }
+  .afisha-container .gallery h3 {
+    font-size: 18px;
+  }
+  .afisha-container .afisha-image {
+    width: 80%;
+    margin-left: 7vw;
+  }
+  .afisha-container .afisha-image .afisha-image-box {
+    padding-left: 0px;
+  }
+  .afisha-container .afisha-image img {
+    max-width: 200px;
+    display: block;
+    margin: 0 auto;
+  }
+  .afisha-container .afisha-desc {
+    width: 80%;
+    margin-left: 7vw;
+  }
+  .afisha-container .afisha-desc .afisha-text h3 {
+    font-size: 5vw;
+  }
+  .afisha-container .look_more-film {
+    font-size: 15px;
+  }
+  .kino-events p {
+    font-size: 10px;
+    width: 100%;
+    padding: 20px;
+    padding-right: 50px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .kino-events p {
+    font-size: 8px;
+  }
+}
